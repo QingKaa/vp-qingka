@@ -6,7 +6,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 export default defineUserConfig({
   lang: 'en-US',
 
-  title: 'VuePress',
+  title: '清咔',
   description: 'My first VuePress Site',
 
   base: '/vp-qingka/',
@@ -14,21 +14,24 @@ export default defineUserConfig({
     logo: 'https://vuejs.press/images/hero.png',
 
     navbar: [
-      '/',
       {
-        text: 'Article',
+        text: '首页',
+        link: '/',
+      },
+      {
+        text: '文章',
         link: '/article/',
       },
       {
-        text: 'Category',
+        text: '分类',
         link: '/category/',
       },
       {
-        text: 'Tag',
+        text: '标签',
         link: '/tag/',
       },
       {
-        text: 'Timeline',
+        text: '时间线',
         link: '/timeline/',
       },
     ],
@@ -67,7 +70,7 @@ export default defineUserConfig({
           layout: 'Category',
           itemLayout: 'Category',
           frontmatter: () => ({
-            title: 'Categories',
+            title: '分类',
             sidebar: false,
           }),
           itemFrontmatter: (name) => ({
@@ -81,7 +84,7 @@ export default defineUserConfig({
           layout: 'Tag',
           itemLayout: 'Tag',
           frontmatter: () => ({
-            title: 'Tags',
+            title: '标签',
             sidebar: false,
           }),
           itemFrontmatter: (name) => ({
